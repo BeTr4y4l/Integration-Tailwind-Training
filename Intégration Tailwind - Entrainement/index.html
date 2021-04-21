@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/tailwind.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div aria-expanded="false" class="menuToggle hidden flex flex-col justify-center xsm:inline-grid xsm:grid-cols-2 xsm:gap-x-4 bg-greydarker">
+            <div class="m-8">
+                <h2 class="text-white text-3xl font-bold mb-2">About</h2>
+                <p class="text-greylight opacity-60">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium iste a aperiam quibusdam tenetur ut, officia dolores fugiat maiores iusto hic accusantium amet alias, fugit nobis maxime eligendi quaerat rerum.
+                </p>
+            </div>
+            <ul>
+                <li class="flex flex-col text-white sm:ml-40 m-8">
+                    <h2 class="text-3xl font-bold mb-2">Contact</h2>
+                    <a href="#">Follow on Twitter</a>
+                    <a href="#">Like on Facebook</a>
+                    <a href="#">Email me</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="w-100vw h-24 flex justify-between items-center bg-greydarker">
+            <div class="logo-container flex justify-center items-center ml-12">
+                <svg class="mr-8" xmlns=" http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <path
+              d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+            ></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+                <span class="text-white text-xl xsm:text-3xl font-bold">Album</span>
+            </div>
+            <div id="menu" class="menu w-10 h-8 xsm:w-20 xsm:h-16 mr-16 border border-greylight border-opacity-50 rounded-lg flex flex-col items-center justify-evenly">
+                <span class="w-6/12 border xsm:border-2 border-greylight opacity-60 rounded-sm"></span>
+                <span class="w-6/12 border xsm:border-2 border-greylight opacity-60 rounded-sm"></span>
+                <span class="w-6/12 border xsm:border-2 border-greylight opacity-60 rounded-sm"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="h-96 bg-greylight">
+        <div class="h-full container flex flex-col justify-evenly items-center m-auto">
+            <h1 class="text-4xl text-center xsm:text-6xl font-bold">Album example</h1>
+            <p class="text-center w-11/12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eius nostrum. Esse ipsum, sequi similique unde ratione vitae nemo, soluta ipsam velit, magni ad odit in. Quibusdam fugiat itaque delectus.
+            </p>
+            <div class="flex justify-center items-center">
+                <button class="mr-2 w-20 h-10 text-xs xsm:w-32 xsm:h-12 bg-blue text-white xsm:text-base font-bold rounded-lg hover:bg-greydarker hover:text-blue transition ease-in-out duration-200">
+            Main call to action
+          </button>
+                <button class="ml-2 w-20 h-10 text-xs xsm:w-32 xsm:h-12 bg-greydarker text-white xsm:text-base font-bold text-center rounded-lg hover:bg-blue hover:text-greydarker transition ease-in-out duration-200">
+            Secondary action
+          </button>
+            </div>
+        </div>
+    </section>
+    <section class="cards-container container m-auto">
+        <ul class="w-11/12 m-auto flex flex-col sm:grid gap-6 grid-cols-3 mt-10">
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2 text-sm sm:text-base">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+            <li class="border border-greydarker border-opacity-20 rounded-md">
+                <img class="w-full" src="/ressources/photo.jpg" alt="Beach picture" />
+                <p class="m-2">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little big longer.
+                </p>
+                <div class="container flex justify-between">
+                    <div class="container ml-2">
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                View
+              </button>
+                        <button class="w-12 h-6 mb-3.5 border border-greydarker border-opacity-30 text-greydarker rounded-md hover:border-blue hover:text-blue hover:transition ease-in-out duration-200">
+                Edit
+              </button>
+                    </div>
+                    <span class="text-greydarker w-20">9 mins</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="w-11/12 m-auto mt-8 text-sm xsm:text-base">
+        <div class="flex justify-between items-center">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptas unde tenetur nemo voluptatem culpa placeat reprehenderit atque option.
+            </p>
+            <a class="text-blue cursor-pointer ml-2 xsm:ml-0">Back to top</a>
+        </div>
+        <div class="bot my-6">
+            <p>
+                Lorem, ipsum dolor sit
+                <a class="text-blue cursor-pointer">amet consectetur</a> adipisicing elit. Ex soluta tempora voluptate culpa maiores quidem, alias, ipsa
+                <a class="text-blue cursor-pointer">corporis dolorum</a> dolore cumque, dolor optio! Fugiat, eveniet?
+            </p>
+        </div>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>
